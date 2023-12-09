@@ -7,6 +7,7 @@ public class testString{
     static exercise4 ex4=new exercise4();
     static exercise5 ex5=new exercise5();
     static exercise6 ex6=new exercise6();
+    static exercise7 ex7=new exercise7();
 
     public static void main(String[] args) {
         //exercice 1 output
@@ -23,7 +24,7 @@ public class testString{
 
         // exercice 4
 
-       // System.out.println(ex4.equ("This is Exercise 1 ", "This is Exercise 1 "));
+       // System.out.println(ex4.equ("example.com", "Example.com"));
 
        //exercice 5
 
@@ -31,10 +32,10 @@ public class testString{
 
        //exercice 6
 
-       System.out.println(ex6.concate("PHP Exercises and  ", "Python Exercises"));
+       //System.out.println(ex6.concate("PHP Exercises and  ", "Python Exercises"));
 
-
-
+       //exercice 7
+      // System.out.println(ex7.contai("PHP Exercises and Python Exercises" , "and"));
 
     }
     
