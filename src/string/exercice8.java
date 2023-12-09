@@ -22,7 +22,6 @@ public class exercice8 {
         ar.add(0);//-->0
 
         ArrayList<Integer> l= new ArrayList<>();
-        boolean index=true;
         int increment=0;
         for(int i=0;i<ar.size();i++){
 
@@ -38,11 +37,7 @@ public class exercice8 {
             i=ar.get(i)+i;
         }
         l.forEach(System.out::println);
-       
-
-
-
-
+    
     
 }
 }
