@@ -37,12 +37,14 @@ public class exercice15 {
 
         // smarter solution
 
-        HashMap<String,Integer> ma = new HashMap<>();
-        ma.put("apple",1);
-         ma.replace("apple", 2);
-        for (int  i:ma.values()){
-            System.out.println(i);
+        HashMap<Character,Integer> ma = new HashMap<>();
+        
+        for(int i=0;i<c.length;i++){
+            if(!ma.containsKey(c[i])){
+                ma.put(c[i],i);
+            }
         }
+    
       
        
     }   
