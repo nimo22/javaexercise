@@ -1,8 +1,6 @@
 package leetcodeeasy;
 
-import java.util.*;
 
-import string.exercice17.ListNode;
 /*
  * Runtime
 Details

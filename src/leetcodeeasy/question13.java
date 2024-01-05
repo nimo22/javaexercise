@@ -32,7 +32,7 @@ public class question13 {
                 System.out.println("here");
                 digits[i]=0;
                 
-                int []newDigit=digits;
+              
                 digits = new int[digits.length+1];
                 digits[0]=1;
             

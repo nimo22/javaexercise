@@ -29,7 +29,6 @@ import java.util.Arrays;
 public class question8 {
     public static int removeDuplicates(int[] nums) {
 
-        int response=0;
         Arrays.sort(nums);
         ArrayList<Integer> ar= new ArrayList<>();
 
