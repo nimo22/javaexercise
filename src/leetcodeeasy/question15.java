@@ -1,7 +1,6 @@
 package leetcodeeasy;
 //https://leetcode.com/problems/sqrtx/description/
 // no use of sqrt in math libary
-import java.lang.Math;
 public class question15 {
     /*
      * Runtime
