@@ -17,16 +17,12 @@ Beats 19.32%of users with Java
 public class quetion18 {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
 
-       // int totalArray=m+n;
-       // nums1=new int[totalArray];
         for(int i=m; i<nums1.length;i++){
             nums1[i]=nums2[i-m];
         }
 
         Arrays.sort(nums1);
     }
-    public static void main(String[] args) {
-        int []x={}
-    }
+    
 }
 
