@@ -1,5 +1,15 @@
 package leetcodeeasy;
-//todo
+/*
+ * Accepted
+Runtime
+Details
+0ms
+Beats 100.00%of users with Java
+Memory
+Details
+42.85MB
+Beats 90.78%of users with Java
+ */
 public class question27 {
 
 
@@ -16,24 +26,25 @@ public class question27 {
       }
   }
   public boolean hasPathSum(TreeNode root, int targetSum) {
-    boolean valid=false;
+    
     if (root==null) {
-            return false;
+    return false;
     }
+    if(targetSum-root.val==0 && root.left==null && root.right==null){
+      return true;
+    }
+   
+    if(root.right==null){
+      return false || hasPathSum(root.left, targetSum-root.val);
 
-    int sumleft=root.val;
-    int sumright=root.val;//5
-    TreeNode decoyleft=root.left;
-    TreeNode decoyright=root.right;
-
-    while (decoyleft!=null) {
-        sumleft=sumleft+decoyleft.val;
-
-        
+    }else if(root.left == null){
+      return false || hasPathSum(root.right, targetSum-root.val);
+    }else{
+      return false ||hasPathSum(root.left, targetSum-root.val) ||hasPathSum(root.right, targetSum-root.val); 
     }
     
-    return valid;
-        
+
+    }
   }
     
-}
+
