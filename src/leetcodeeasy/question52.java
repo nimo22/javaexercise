@@ -30,7 +30,6 @@ public class question52 {
                     }
                     continue;
                 }else{
-                    System.out.println(nums[i]);
                     if(word.length()==0){
                         ar.add(String.valueOf(nums[i]));
                     }else{
@@ -50,13 +49,26 @@ public class question52 {
             }
 
         }
-    System.out.println();
 
         return ar;
     }
 
     public static void main(String[] args) {
-        int []x={0,1,2,4,5,7};
+        int []x={9,5,4,2,1,0};
+        
+        for(int i=0;i<x.length;i++){
+            for(int r=0;r<x.length;r++){
+                if(x[i]<x[r]){
+                    int o=x[i];
+                    x[i]=x[r];
+                    x[r]=o;
+
+                }
+            }
+        }
+        for (int i : x) {
+            System.out.println(i);
+        }
         System.out.println(summaryRanges(x));
     }
 }

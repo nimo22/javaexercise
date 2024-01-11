@@ -37,6 +37,7 @@ public class question53 {
     }
     public static void main(String[] args) {
         System.out.println(isPowerOfTwo(1));
+        
     }
     
 }
