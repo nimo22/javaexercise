@@ -11,6 +11,16 @@ Memory
 46.81MB
 Beats7.61%of users with Java
  */
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
 public class question41 {
     public ListNode removeElements(ListNode head, int val) {
         if(head==null){
