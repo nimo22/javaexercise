@@ -21,20 +21,21 @@ public class question57 {
              
                 liLeft.add(String.valueOf(root.val));
                 return liLeft;
-            }else if(root.left!=null){
+            }else if(root.left==null){
                 wordOne=String.valueOf(root.val)+"->"+binaryTreePaths(root.right).get(0);
                 liLeft.add(wordOne);
                 
                 return liLeft;
 
-            }else if(root.right!=null){
+            }else if(root.right==null){
                 System.out.println("ok");
-                wordOne=String.valueOf(root.val)+"->"+binaryTreePaths(root.left).get(0);
+                wordOne=String.valueOf(root.val)+"->";
                 liLeft.add(wordOne);
                 
                 return liLeft;
 
             }else{
+
                 wordOne=String.valueOf(root.val)+"->";
                 for (String string : binaryTreePaths(root.left)) {
                     wordOne=wordOne+string;
@@ -42,8 +43,10 @@ public class question57 {
                 }
                 //left then righ
                 wordTwo=String.valueOf(root.val)+"->";
+                System.out.println();
                  for (String t : binaryTreePaths(root.right)) {
-                    wordTwo=wordTwo+t;
+                    System.out.println();
+                    
                     liRight.add(wordOne);
                 }
                 
