@@ -7,7 +7,7 @@ Memory
 45.49MB
 Beats7.65%of users with Java
  */
-
+//https://leetcode.com/problems/ransom-note/submissions/1148126748/
 public class question78 {
     public boolean canConstruct(String ransomNote, String magazine) {
         char []word= ransomNote.toCharArray();
@@ -33,5 +33,11 @@ public class question78 {
 
 
         return false;
+    }
+    public static void main(String[] args) {
+        int x=9;
+        int y=1+(x++);
+        
+        System.out.println(y);
     }
 }
