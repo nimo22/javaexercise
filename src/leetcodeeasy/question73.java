@@ -28,7 +28,7 @@ public class question73 {
             }
         }
         int []p=new int[w.size()];
-        System.out.println(w.get);
+        
         for(int i=0;i<w.size();i++){
             System.out.println(w.get(i));
             p[i]=w.get(i);
