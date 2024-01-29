@@ -24,5 +24,12 @@ public class quetion18 {
         Arrays.sort(nums1);
     }
     
+    public static void main(String[] args) {
+        
+        double x=2;
+        String.valueOf(x);
+        String h=String.format("%.0f", x);
+        System.out.println(h);
+    }
 }
 
