@@ -46,7 +46,8 @@ public class question95 {
 
         String xbinary= Integer.toBinaryString(x);
         String ybinary= Integer.toBinaryString(y);
-        System.out.println(ybinary);
+        ybinary=String.format("%32s", ybinary).replace(" ", "0");
+        xbinary=String.format("%32s", xbinary).replace(" ", "0");
         int compare=0;
         for(int i=0;i<ybinary.length();i++){
                     if (ybinary.charAt(i)!=xbinary.charAt(i)) {
